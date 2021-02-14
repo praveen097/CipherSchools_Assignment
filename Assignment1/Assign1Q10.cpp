@@ -28,6 +28,5 @@ int main(){
           
        water = water + (min(left, right) - arr[i]);   
     }
- 
     cout<<water; 
 } 
