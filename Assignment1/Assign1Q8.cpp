@@ -14,7 +14,6 @@ int main(){
     int smallest;
     cin>>smallest;
     for(int i = smallest; i < n; i++) {
-
             int max = arr[smallest -1];
             int max_position = smallest - 1;
 
