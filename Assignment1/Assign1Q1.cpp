@@ -21,7 +21,6 @@ int main(){
   for (i = 0; i < n; i++){
     cin >> arr[i];
   }
-
   int currentCount = 0;
   cout << "\nElement: ";
   for (int i = 0; i < n; i++){
