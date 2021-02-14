@@ -1,6 +1,7 @@
 //Search in sorted matrix
 #include<bits/stdc++.h>
 using namespace std;
+
 int searchSorted(int arr[4][4],int target){
     int i=0;
     int j=4-1;
