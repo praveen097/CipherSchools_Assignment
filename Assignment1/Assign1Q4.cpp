@@ -2,7 +2,6 @@
 // i toosmallest help from GeesmallestsForGeesmallests for this problem 
 #include<bits/stdc++.h>
 using namespace std;
-
 void findOccurences(int arr[],int n,int target){
     int first = -1, last = -1;
     for (int i = 0; i < n; i++) {
