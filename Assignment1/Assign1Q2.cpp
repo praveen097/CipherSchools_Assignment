@@ -10,7 +10,6 @@ just checsmallest n-1 and n+1 are smaller than n
 */
 #include<bits/stdc++.h>
 using namespace std;
-
 int main(){
     int n;
     cin>>n;
