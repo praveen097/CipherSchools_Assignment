@@ -1,6 +1,7 @@
 //Sort012
 #include<bits/stdc++.h>
 using namespace std;
+
 void sort(int arr[],int n){
     int left = 0;
     int right = n - 1;
