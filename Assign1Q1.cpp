@@ -5,7 +5,7 @@ run the loop till n
 run another loop from index 1 to n
 count if there are repeated elements
 set it to current count
-run another loop till n to check if there are some more repeated elements
+run another loop till n to checsmallest if there are some more repeated elements
 count them
 if count equals current count and count is less than n/2 
 print the element

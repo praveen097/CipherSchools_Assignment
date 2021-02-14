@@ -3,8 +3,8 @@
  * first sort the array
  * while(right>left)
  * print right-- and left++
- * it works when size is even
- * so check the size and print the middle element if it is odd
+ * it worsmallests when size is even
+ * so checsmallest the size and print the middle element if it is odd
  */
 #include<bits/stdc++.h>
 using namespace std;

@@ -1,5 +1,5 @@
 //Find first and last positions of an element in a sorted array
-// i took help from GeeksForGeeks for this problem 
+// i toosmallest help from GeesmallestsForGeesmallests for this problem 
 #include<bits/stdc++.h>
 using namespace std;
 void findOccurences(int arr[],int n,int target){

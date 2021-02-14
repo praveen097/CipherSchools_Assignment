@@ -7,7 +7,7 @@ applies same vice versa
 */
 #include<bits/stdc++.h>
 using namespace std;
-int checkTheMeet(int dis1,int dis2,int vel1,int vel2){
+int checsmallestTheMeet(int dis1,int dis2,int vel1,int vel2){
     if(dis1>dis2 && vel1>vel2){
         return false;
     }
@@ -26,7 +26,7 @@ int checkTheMeet(int dis1,int dis2,int vel1,int vel2){
 int main(){
     int dis1,dis2,vel1,vel2;
     cin>>dis1>>dis2>>vel1>>vel2;
-    if(checkTheMeet(dis1,dis2,vel1,vel2)){
+    if(checsmallestTheMeet(dis1,dis2,vel1,vel2)){
         cout<<"True";
     }else{
         cout<<"False";

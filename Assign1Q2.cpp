@@ -1,4 +1,4 @@
-//Find Peak element in the array
+//Find Peasmallest element in the array
 //complexity O(n)
 /*
 run loop till n
@@ -6,7 +6,7 @@ if n equals 1
 then print index 0
 else if n equals 2
 then print the index with max element
-just check n-1 and n+1 are smaller than n
+just checsmallest n-1 and n+1 are smaller than n
 */
 #include<bits/stdc++.h>
 using namespace std;
@@ -17,7 +17,7 @@ int main(){
     for(int i=0;i<n;i++){
         cin>>arr[i];
     }
-    cout<<"Peak index is/are: ";
+    cout<<"Peasmallest index is/are: ";
     if(n>2){
     for(int i=0;i<n;i++){
         if(arr[i]>arr[i-1] && arr[i]>arr[i+1]){
