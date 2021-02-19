@@ -1,0 +1,50 @@
+public class Assign4Q7 {
+    public static int maxAreaInHistogram(int [] arr) {
+        StackUsingLinkedList s = new StackUsingLinkedList();
+
+        int max_area = 0;
+
+        int i = 0;
+        while(i < arr.length) {
+            int currentBuilding = arr[i];
+            if(s.isEmpty() || currentBuilding >= arr[s.top()]) {
+                s.push(i);
+                i++;
+            } else {
+                int previousBar = s.pop();
+                int height = arr[previousBar];
+                int width;
+                if(s.isEmpty()) {
+                    width = i;
+                } else {
+                    width = i - s.top() - 1;
+                }
+                int area = height * width;
+                max_area = Math.max(area, max_area);
+            }
+        }
+
+        while(!s.isEmpty()) {
+            int previousBar = s.pop();
+            int height = arr[previousBar];
+            int width;
+            if(s.isEmpty()) {
+                width = i;
+            } else {
+                width = i - s.top() - 1;
+            }
+            int area = height * width;
+            max_area = Math.max(area, max_area);
+        }
+
+        return  max_area;
+    }
+
+
+    public static void main(String[] args) {
+
+        int [] arr = {6, 0, 5, 4, 5, 1, 6};
+
+        System.out.println(maxAreaInHistogram(arr));
+    }
+}
